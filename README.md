@@ -5,9 +5,7 @@
 [![PyPI version](https://badge.fury.io/py/otp-mcp-server.svg)](https://badge.fury.io/py/otp-mcp-server)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
-[![Imports: isort](https://img.shields.io/badge/%20imports-isort-%231674b1?style=flat&labelColor=ef8336)](https://pycqa.github.io/isort/)
-
+[![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
 <a href="https://glama.ai/mcp/servers/@andreax79/otp-mcp">
   <img width="380" height="200" src="https://glama.ai/mcp/servers/@andreax79/otp-mcp/badge" alt="otp-mcp-server MCP server" />
 </a>

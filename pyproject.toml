@@ -27,8 +27,7 @@ classifiers = [
 
 [project.optional-dependencies]
 dev = [
-    "black",
-    "isort",
+    "ruff",
     "pytest",
     "pytest-asyncio",
     "pytest-cov",
@@ -40,6 +39,9 @@ Issues = "https://github.com/andreax79/otp-mcp/issues"
 
 [project.scripts]
 otp-mcp-server = "otp_mcp.__main__:main"
+
+[tool.ruff]
+line-length = 132
 
 [tool.black]
 line-length = 120
