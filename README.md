@@ -1,6 +1,6 @@
 # OTP-MCP-Server
 
-![](https://badge.mcpx.dev?type=server "MCP Server")
+[![MCP Server](https://badge.mcpx.dev?type=server)](https://glama.ai/mcp/servers/andreax79/otp-mcp)
 [![Build Status](https://github.com/andreax79/otp-mcp/workflows/Tests/badge.svg)](https://github.com/andreax79/otp-mcp/actions)
 [![PyPI version](https://badge.fury.io/py/otp-mcp-server.svg)](https://badge.fury.io/py/otp-mcp-server)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
