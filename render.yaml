@@ -5,6 +5,7 @@ services:
     plan: free
     dockerfilePath: ./Dockerfile
     dockerContext: .
+    healthCheckPath: /mcp
     envVars:
       - key: OTP_MCP_SERVER_TRANSPORT
         value: http-stream
