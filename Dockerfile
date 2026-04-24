@@ -21,7 +21,7 @@ ENV OTP_MCP_SERVER_DB="/app/freakotp.db"
 
 RUN adduser mcp && chown mcp:mcp /app
 
-COPY --from=uv --chown=app:app /app/.venv /app/.venv
+COPY --from=uv --chown=mcp:mcp /app/.venv /app/.venv
 
 USER mcp
 EXPOSE 8000
