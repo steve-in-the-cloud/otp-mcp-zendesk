@@ -23,7 +23,8 @@ RUN adduser mcp && chown mcp:mcp /app
 
 COPY --from=uv --chown=app:app /app/.venv /app/.venv
 
-USER mcp:
+USER mcp
 EXPOSE 8000
 
 ENTRYPOINT ["otp-mcp-server"]
+CMD ["--http-stream", "--host", "0.0.0.0", "--port", "8000"]

@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: otp-mcp-server
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    envVars:
+      - key: OTP_MCP_SERVER_TRANSPORT
+        value: http-stream
+      - key: OTP_MCP_SERVER_HOST
+        value: 0.0.0.0
+      - key: OTP_MCP_SERVER_PORT
+        value: 8000
+      - key: OTP_MCP_SERVER_LOG_LEVEL
+        value: INFO
+      - key: OTP_MCP_SERVER_DB
+        value: /app/freakotp.db
+    healthCheckPath: /health
