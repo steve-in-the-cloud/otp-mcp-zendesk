@@ -26,6 +26,7 @@ from pathlib import Path
 
 from fastmcp import FastMCP
 from freakotp.token import TokenDb
+from starlette.middleware.cors import CORSMiddleware
 
 __all__ = [
     "mcp",
@@ -35,6 +36,16 @@ __all__ = [
 
 # Initialize FastMCP server
 mcp = FastMCP("otp", mask_error_details=True)
+
+# Add CORS middleware for Zendesk integration
+mcp.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Allow all origins - restrict in production
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+    expose_headers=["*"],
+)
 
 # Token database
 _token_db: TokenDb = TokenDb | None  # type: ignore
