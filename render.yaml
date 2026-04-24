@@ -8,7 +8,7 @@ services:
     healthCheckPath: /mcp
     envVars:
       - key: OTP_MCP_SERVER_TRANSPORT
-        value: http-stream
+        value: sse
       - key: OTP_MCP_SERVER_HOST
         value: 0.0.0.0
       - key: OTP_MCP_SERVER_PORT

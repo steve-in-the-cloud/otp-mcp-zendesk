@@ -27,4 +27,4 @@ USER mcp
 EXPOSE 8000
 
 ENTRYPOINT ["otp-mcp-server"]
-CMD ["--http-stream", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["--sse", "--host", "0.0.0.0", "--port", "8000"]
