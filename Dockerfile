@@ -26,5 +26,5 @@ COPY --from=uv --chown=mcp:mcp /app/.venv /app/.venv
 USER mcp
 EXPOSE 8000
 
-ENTRYPOINT ["otp-mcp-server"]
-CMD ["--sse", "--host", "0.0.0.0", "--port", "8000"]
+# Run REST API for Zendesk compatibility
+CMD ["python", "-m", "uvicorn", "rest_api:app", "--host", "0.0.0.0", "--port", "8000"]

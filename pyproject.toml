@@ -14,9 +14,12 @@ keywords = [ "otp", "mcp", "totp", "web-automation", "ai-tools", "mcp-server" ]
 requires-python = ">=3.11"
 dependencies = [
     "click",
+    "fastapi",
     "fastmcp",
     "freakotp",
-    "securid"
+    "pyotp",
+    "securid",
+    "uvicorn"
 ]
 license = "MIT"
 license-files = ["LICENSE"]

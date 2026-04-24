@@ -5,7 +5,7 @@ services:
     plan: free
     dockerfilePath: ./Dockerfile
     dockerContext: .
-    healthCheckPath: /mcp
+    healthCheckPath: /health
     envVars:
       - key: OTP_MCP_SERVER_TRANSPORT
         value: sse
