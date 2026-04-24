@@ -16,4 +16,5 @@ services:
         value: INFO
       - key: OTP_MCP_SERVER_DB
         value: /app/freakotp.db
-    healthCheckPath: /health
+      - key: OTP_MCP_SERVER_PATH
+        value: /mcp
